@@ -1,7 +1,7 @@
 import requests
 import yaml
 
-LST_URL = "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/geoblock.lst"  # <-- Замени на свою ссылку
+LST_URL = "https://raw.githubusercontent.com/itdoginfo/allow-domains/refs/heads/main/Categories/anime.lst"
 OUTPUT_YAML = "output.yaml"
 
 def fetch_lst(url):
