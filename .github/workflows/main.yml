@@ -1,0 +1,36 @@
+name: Convert LST to YAML
+
+on:
+  schedule:
+    - cron: '0 0 */3 * *'  # Каждые 3 дня в полночь UTC
+  workflow_dispatch:  # Возможность ручного запуска
+
+jobs:
+  convert:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: pip install pyyaml requests
+
+    - name: Run converter script
+      run: python main.py
+
+    - name: Commit and push changes
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add output.yaml
+        git commit -m "Auto update YAML from LST"
+        git push
+      env:
+        # Для пуша потребуется токен
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
