@@ -24,7 +24,7 @@ jobs:
     - name: Run converter script
       run: python main.py
 
-    - name: Commit and push changes
+    - name: Commit and push changes if there are any
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
