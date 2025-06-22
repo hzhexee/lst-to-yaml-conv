@@ -28,9 +28,8 @@ jobs:
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "github-actions[bot]@users.noreply.github.com"
-        git add output.yaml
-        git commit -m "Auto update YAML from LST"
+        git add *.yaml
+        git commit -m "Auto update YAML files from LST sources" || echo "No changes to commit"
         git push
       env:
-        # Для пуша потребуется токен
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
