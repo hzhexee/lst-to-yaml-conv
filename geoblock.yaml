@@ -1,5 +1,6 @@
 payload:
 - +.4pda.to
+- +.4pda.ws
 - +.habr.com
 - +.openai.com
 - +.chatgpt.com
@@ -37,11 +38,13 @@ payload:
 - +.myjetbrains.com
 - +.jetbrains.space
 - +.api.jetbrains.ai
+- +.youtrack.cloud
 - +.supercell.com
 - +.clashofclans.com
 - +.brawlstarsgame.com
 - +.clashroyaleapp.com
 - +.squadbustersgame.com
+- +.haydaygame.com
 - +.copilot.microsoft.com
 - +.designer.microsoft.com
 - +.xsts.auth.xboxlive.com
@@ -306,3 +309,5 @@ payload:
 - +.marvelsnap.com
 - +.global.platform.seconddinnertech.com
 - +.fxnetworks.com
+- +.deepl.com
+- +.citrix.com
