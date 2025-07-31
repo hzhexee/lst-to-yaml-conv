@@ -90,6 +90,7 @@ payload:
 - +.install.launcher.omniverse.nvidia.com
 - +.canva.dev
 - +.canva.com
+- +.kaleido.ai
 - +.usher.ttvnw.net
 - +.gql.twitch.tv
 - +.adobe.com
@@ -324,3 +325,10 @@ payload:
 - +.filebin.net
 - +.andrevi.ch
 - +.ansys.com
+- +.clickup.com
+- +.mailerlite.com
+- +.hc-ping.com
+- +.hchk.io
+- +.expandrive.com
+- +.editorx.com
+- +.myqrcode.com
